@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/TwoSDReports.csproj/global.asax" hash="1413d0e4" filehash="364f6fa6cd1b" flags="150000" assembly="TwoSDReports.csproj_deploy" type="ASP.global_asax">
+  <filedeps>
+    <filedep name="/TwoSDReports.csproj/global.asax" />
+  </filedeps>
+</preserve>

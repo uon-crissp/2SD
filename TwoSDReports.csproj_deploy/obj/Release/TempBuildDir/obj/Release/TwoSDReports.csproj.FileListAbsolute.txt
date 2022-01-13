@@ -1,0 +1,5 @@
+C:\Dropbox\Apps\TwoSDReports\TwoSDReports\bin\TwoSDReports.dll
+C:\Dropbox\Apps\TwoSDReports\TwoSDReports\bin\TwoSDReports.pdb
+C:\Dropbox\Apps\TwoSDReports\TwoSDReports\obj\Release\TwoSDReports.dll
+C:\Dropbox\Apps\TwoSDReports\TwoSDReports\obj\Release\TwoSDReports.pdb
+C:\Dropbox\Apps\TwoSDReports\TwoSDReports\obj\Release\TwoSDReports.csprojResolveAssemblyReference.cache

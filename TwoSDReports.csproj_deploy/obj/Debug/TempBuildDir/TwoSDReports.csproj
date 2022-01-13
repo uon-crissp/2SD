@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E02F7B7-3616-4212-823E-6D3E0DD52A8C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwoSDReports</RootNamespace>
+    <AssemblyName>TwoSDReports</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\EMRPortal\EMRPortal\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="exportdata_files\AdminLTE.css" />
+    <Content Include="exportdata_files\all.css" />
+    <Content Include="exportdata_files\bootstrap-switch.css" />
+    <Content Include="exportdata_files\bootstrap.css" />
+    <Content Include="exportdata_files\calendar.css" />
+    <Content Include="exportdata_files\CustomStyle%281%29.css" />
+    <Content Include="exportdata_files\CustomStyle.css" />
+    <Content Include="exportdata_files\dataTables.bootstrap.css" />
+    <Content Include="exportdata_files\datepicker3.css" />
+    <Content Include="exportdata_files\daterangepicker.css" />
+    <Content Include="exportdata_files\fontawesome-all.min.css" />
+    <Content Include="exportdata_files\grid.css" />
+    <Content Include="exportdata_files\ionicons.min.css" />
+    <Content Include="exportdata_files\iqcare.ke-font.css" />
+    <Content Include="exportdata_files\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="exportdata_files\mbExtruder.css" />
+    <Content Include="exportdata_files\mb_information.gif" />
+    <Content Include="exportdata_files\parsley.css" />
+    <Content Include="exportdata_files\round.css" />
+    <Content Include="exportdata_files\select2.min.css" />
+    <Content Include="exportdata_files\style%281%29.css" />
+    <Content Include="exportdata_files\style.css" />
+    <Content Include="exportdata_files\style_light.css" />
+    <Content Include="exportdata_files\uniform.css" />
+    <Content Include="exportdata_files\_all-skins.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="reports\index.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="exportdata_files\allInOne.js.download" />
+    <None Include="exportdata_files\allStrings_en.js.download" />
+    <None Include="exportdata_files\app.min.js.download" />
+    <None Include="exportdata_files\bootbox.js.download" />
+    <None Include="exportdata_files\bootstrap-colorpicker.min.js.download" />
+    <None Include="exportdata_files\bootstrap-datepicker.js.download" />
+    <None Include="exportdata_files\bootstrap-switch.js.download" />
+    <None Include="exportdata_files\bootstrap.min.js.download" />
+    <None Include="exportdata_files\crv.js.download" />
+    <None Include="exportdata_files\dataTables.bootstrap.min.js.download" />
+    <None Include="exportdata_files\dateformat.js.download" />
+    <None Include="exportdata_files\daterangepicker.js.download" />
+    <None Include="exportdata_files\demo.js.download" />
+    <None Include="exportdata_files\highlight.js.download" />
+    <None Include="exportdata_files\highlightLabels.js.download" />
+    <None Include="exportdata_files\icheck.js.download" />
+    <None Include="exportdata_files\IQCareScript.js.download" />
+    <None Include="exportdata_files\jquery-2.2.3.min.js.download" />
+    <None Include="exportdata_files\jquery.dataTables.js.download" />
+    <None Include="exportdata_files\jquery.formatDateTime.js.download" />
+    <None Include="exportdata_files\jquery.hoverIntent.min.js.download" />
+    <None Include="exportdata_files\jquery.inputmask.date.extensions.js.download" />
+    <None Include="exportdata_files\jquery.inputmask.extensions.js.download" />
+    <None Include="exportdata_files\jquery.inputmask.js.download" />
+    <None Include="exportdata_files\jquery.mb.flipText.js.download" />
+    <None Include="exportdata_files\jquery.tablesorter.min.js.download" />
+    <None Include="exportdata_files\jsCommon.js.download" />
+    <None Include="exportdata_files\jsDate.js.download" />
+    <None Include="exportdata_files\mbExtruder.js.download" />
+    <None Include="exportdata_files\menu.js.download" />
+    <None Include="exportdata_files\moment.min.js.download" />
+    <None Include="exportdata_files\ScriptResource%281%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2810%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2811%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2812%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2813%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2814%29.axd" />
+    <None Include="exportdata_files\ScriptResource%2815%29.axd" />
+    <None Include="exportdata_files\ScriptResource%282%29.axd" />
+    <None Include="exportdata_files\ScriptResource%283%29.axd" />
+    <None Include="exportdata_files\ScriptResource%284%29.axd" />
+    <None Include="exportdata_files\ScriptResource%285%29.axd" />
+    <None Include="exportdata_files\ScriptResource%286%29.axd" />
+    <None Include="exportdata_files\ScriptResource%287%29.axd" />
+    <None Include="exportdata_files\ScriptResource%288%29.axd" />
+    <None Include="exportdata_files\ScriptResource%289%29.axd" />
+    <None Include="exportdata_files\ScriptResource.axd" />
+    <None Include="exportdata_files\select2.full.js.download" />
+    <None Include="exportdata_files\ttw-notification-center.js.download" />
+    <None Include="exportdata_files\underscore.js.download" />
+    <None Include="exportdata_files\WebResource%281%29.axd" />
+    <None Include="exportdata_files\WebResource%282%29.axd" />
+    <None Include="exportdata_files\WebResource.axd" />
+    <None Include="exportdata_files\weeklycalendar.js.download" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49926</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

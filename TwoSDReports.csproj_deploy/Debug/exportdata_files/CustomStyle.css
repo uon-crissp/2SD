@@ -1,0 +1,10 @@
+﻿.td rowpadding
+{padding:4px;}
+.pad5OneCol{
+    padding: 5px !important;
+    display: block !important;
+    width: 100% !important;
+    border-bottom: 1px solid #DADADA !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
